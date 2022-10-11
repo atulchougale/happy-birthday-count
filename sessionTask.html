@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        #test{
+            color: red;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 id="test">
+       
+    </h1>
+    <i class="fa-solid fa-heart" style="font-size:100px ; color:rgb(238, 37, 137);"></i>
+    <script>
+        var a="", counter=1;
+        var happy=document.getElementById('test');
+        var heart=document.getElementsByClassName('fa-solid fa-heart');
+        var timer=setInterval(bday,1000);
+        function bday(){
+            
+            if(counter>10){
+                clearInterval(timer);
+                a="HAPPY BIRTHDAY!!!"
+                
+            }
+           
+            else{
+                a=counter;
+                counter++    
+            }
+            happy.innerHTML=a;
+           
+        }
+    </script>
+</body>
+</html>
